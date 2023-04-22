@@ -53,6 +53,110 @@ These were the steps taken to perform data extraction and cleaning:
   2. Dropped all duplicate values
   3. Dropped all null values
   4. Performed min-max normalisation. 
+ 
+ Information about each column in the first dataset can be found below. (Note: the values stated are before Min-Max Normalization)
+* ID:
+  * It is the unique index assigned to each song
+  * Datatype: Categorical - it is actually a string so the data type in the output specifies it as object
+
+* Name:
+  * It is the title of the song
+  * Datatype: It is actually a string so the data type in the output specifies it as object
+
+* Popularity:
+  * It is the popularity score which ranges from 0 to 100, with 100 being the most popular. It is calculated based on the number of streams and how recent those streams are
+  * Datatype: Categorical
+
+* Duration_ms:
+  * It is the duration of the song given in milliseconds
+  * Datatype: Numerical
+
+* Explicit:
+  * It indicates whether a track contains explicit content (lyrics or themes that may be unsuitable for children or sensitive listeners). The value of this column is binary, with 1 indicating that the track contains explicit content, and 0 indicating that it does not.
+  * Datatype: Categorical
+
+* Artists:
+  * It is the name of the artists of the song
+  * Datatype: Categorical - it is actually a string so the data type specifies it as object
+
+* Id_artists:
+  * It is the unique id of each artist
+  * Datatype: Categorical-it is actually a string so the data type specifies it as object
+
+* Release_date:
+  * It gives the song release date
+  * Datatype: It is a timestamp, so it has been given as object data type in the output
+
+* Danceability:
+  * It represents a score indicating how suitable a track is for dancing based on a combination of musical elements, such as tempo, rhythm stability, beat strength, and overall regularity. The values range from 0.0 to 1.0, with higher values indicating that a track is more danceable
+  * Datatype: Numerical
+
+* Energy:
+  * It is a measure of how powerful and energetic a song sounds.The energy value ranges from 0 to 1, with higher values indicating more energetic songs
+  * Datatype: Numerical
+
+* Key:
+  * It is assigned based on the standard pitch class notation system, which assigns a number between 0 and 11 to represent the 12 different pitch classes in western music. In the dataset, this column contains integer values ranging from 0 to 11, where each value corresponds to a specific pitch class
+  * Datatype: Numerical
+
+* Loudness:
+  * It represents the overall loudness of a track in decibels (dB). The loudness values are represented as floating-point numbers ranging from -60 dB to 0 dB
+  * Datatype: Numerical
+
+* Mode:
+  * It represents the modality of a track, i.e., whether a track is in a major or minor key. It is indicated by a binary value, where 1 represents a major key and 0 represents a minor key
+  * Datatype: Numerical
+
+* Speechiness:
+  * It ranges from 0.0 to 1.0, with higher values indicating that a track is more likely to be mostly spoken words, while lower values indicate that the track is likely to be more instrumental or music-focused
+  * Datatype: Numerical
+
+* Acousticness:
+  * It is represented as a value between 0.0 and 1.0, where 0.0 indicates a high degree of electronic sounds and 1.0 indicates a high degree of acoustic sounds
+  * Datatype: Numerical
+
+* Instrumentalness:
+  * It is represented as a value between 0.0 and 1.0, where a higher value indicates that the track is more instrumental and contains fewer vocals
+  * Datatype: Numerical
+
+* Liveness:
+  * It refers to the probability that a track was performed live. The value is represented as a float between 0.0 and 1.0, where a higher value indicates that the track is more likely to have been performed live
+  * Datatype: Numerical
+
+* Valence:
+  * It is a numeric indicator of the musical positiveness conveyed by a track. The values range from 0.0 to 1.0, where tracks with a higher valence value sound more positive or happy, and those with a lower valence value sound more negative or sad
+  * Datatype: Numerical
+
+* Tempo:
+  * It ranges from around 40 BPM to over 200 BPM, with an average of around 120 BPM.A higher tempo generally indicates a faster-paced song, while a lower tempo suggests a slower, more relaxed song
+  * Datatype: Numerical
+
+* Time_signature:
+  * It is represented as integers, where the first number in the time signature is represented by the integer value in the column. For example, a track with a time signature of 4/4 would have a value of 4 in the time signature column
+  * Datatype: Numerical
+
+Information about each column in the second dataset can be found below.
+* ALink:
+  * It refers to the link to the webpage where the lyrics were scraped from. It is irrelevent to our project so we do not use it in analysis
+  * Datatype: It is a URL so the output specifies it as object
+
+* SName:
+  * It refers to the title of the song
+  * Datatype: It is a string so the output specifies it as object
+
+* Slink:
+  * It refers to link of the song. It is irrelevent to our project so we do not use it in analysis
+  * Datatype: It is a URL so it has been specified as object in the ouput
+
+* Lyric:
+  * It refers to the lyrics of the song
+  * Datatype: It is a string so it has been specified as object in the output
+
+* Language:
+  * The values are two-letter codes representing the language, such as "en" for English, "es" for Spanish, "fr" for French, and so on
+  * Datatype: It is actually a string so the data type in the output specifies it as object
+
+
 
 ## Exploratory Data Analysis
 EDA carried out in our first dataset showed the following-:
