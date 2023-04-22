@@ -54,6 +54,24 @@ These were the steps taken to perform data extraction and cleaning:
   3. Dropped all null values
   4. Performed min-max normalisation. 
 
+## Exploratory Data Analysis
+EDA carried out in our first dataset showed the following-:
+1. We plotted scatterplots between popularity index (to be predicted) and each numerical feature variable like loudness, danceability, etc. All of them indicated very poor correlation coefficient values.This led us to the hypothesis that a non-linear relationship exists between the numerical variables and popularity index.
+
+2. We plotted categorically divided boxplots for the categorical variables like key, mode, etc. Even they indicated very poor correlation values.
+
+3. Same conclusion was drawn from a heatmap plotted between all the variables and popularity.
+
+4. These poor correlations are understandable as song making is a complicated process and a single feature can never guarantee success of the song.
+
+EDA carried out in our second dataset showed the following-:
+1. We created a new column in the dataset called lenth with the length of each element x of the 'Lyric Altered' column. After creating the column, we have performed EDA by creating a box plot for the length values.
+
+2. We also plotted the histogram plot along with the kernel density estimate of popularity index.
+
+3. We also extracted the top 20 common words in the lyrics and plotted them in a barplot.
+
+
 ## Models Used
 Models used for predicting popularity using features like tempo, key, loudness, etc :
   1. Sequential Neural Network
