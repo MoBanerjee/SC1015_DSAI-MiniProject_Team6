@@ -168,6 +168,17 @@ EDA carried out in our first dataset showed the following-:
 
 4. These poor correlations are understandable as song making is a complicated process and a single feature can never guarantee success of the song.
 
+For the second dataset, before performing EDA, we performed some text-cleaning functions (Natural Language Pre-processing) on the lyrics data.The steps taken involve-:
+1. Conversion of all alphabets to lowercase for consistency.
+
+2. Stopwords Removal-: Stopwords are common words that are usually removed from text data during preprocessing because they do not carry much meaning.
+
+3. Stemming-: Process of reducing a word to its base form (or stem) by removing affixes (prefixes, suffixes, etc.).
+
+4. Tokenization-: Splitting the text string into individual words or tokens.
+
+After all this text pre-processing, we recombined the cleaned text string and returned it. 
+
 EDA carried out in our second dataset showed the following-:
 1. We created a new column in the dataset called lenth with the length of each element x of the 'Lyric Altered' column. After creating the column, we have performed EDA by creating a box plot for the length values.
 
