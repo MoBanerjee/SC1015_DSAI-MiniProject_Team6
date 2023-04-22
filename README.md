@@ -69,14 +69,14 @@ The file structure of repository is as follows:
   1. Root Directory: 
     Contains all the notebooks
   2. Final Datasets: 
-    a. tracks.csv - The non-edited dataset downloaded from Kaggle. Contains the statistical data such as danceability, explicit, etc. 
-    b. lyrics.csv - The non-edited dataset downloaded from Kaggle. Contains the lyrics to all the songs used. 
-    c. dataCleaned.csv - The merged and cleaned file. This file is created in 'Data Extraction and Cleaning.ipynb'. 
+     1. tracks.csv - The non-edited dataset downloaded from Kaggle. Contains the statistical data such as danceability, explicit, etc. 
+     2. lyrics.csv - The non-edited dataset downloaded from Kaggle. Contains the lyrics to all the songs used. 
+     3. dataCleaned.csv - The merged and cleaned file. This file is created in 'Data Extraction and Cleaning.ipynb'. 
   3. Train Test Data: 
     This file contains the train and test data for each model. We split the data in a seperate notebook called 'Train Test Split.ipynb'. This was to ensure that the same data is fed to each model for better accuracy. 
     It has the files: 
-      a. train.csv - Training data
-      b. test.csv - Test data
+      1. train.csv - Training data
+      2. test.csv - Test data
 
 ## Conclusion
   1. For statistical data, we obtained the best results with neural networks.It yielded a Mean Squared Error of only 0.026 which is lesser than that given      by both the baseline models(Random Forest and Linear Regression).
