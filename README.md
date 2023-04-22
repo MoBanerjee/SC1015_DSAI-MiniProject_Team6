@@ -60,13 +60,11 @@ Models used for predicting popularity using lyrics :
 ## Conclusion
   1. For statistical data, we obtained the best results with neural networks.It yielded a Mean Squared Error of only 0.026 which is lesser than that given      by both the baseline models(Random Forest and Linear Regression).
   
-  2. Random Forest model yielded an MSE of 15.53. It fared better than regression but fell short of the accuracy given by neural networks.
+  2. For this data, Linear Regression performed better than Random Forest Model as the former gave a lower MSE of 0.027 while the latter had an MSE of 0.16. This could be due to overfitting in the random forest model. Overfitting happens when a model is too complex and fits noise instead of patterns in training data, leading to poor generalization on new data. Random forest models tend to have more flexibility than linear regression models, which makes them more susceptible to overfitting.
+
+  3. For lyrics data, we obtained the best results with LSTM.It yielded a Mean Squared Error of only 0.045 which is lesser than that given by the baseline      model(Linear Regression) used.
   
-  3. Regression model performed the worst as it yielded a large mean squared error of 261.71 and a poor R square score of 0.23 for statistical data.
-  
-  4. For lyrics data, we obtained the best results with LSTM.It yielded a Mean Squared Error of only 0.045 which is lesser than that given by the baseline      model(Linear Regression) used.
-  
-  5. Since the mean squared error of statistical data(0.026) is lesser than that of lyrics data(0.045), hence we conclude that the statistical features          like liveness, tempo, danceability, etc are better predictors of the popularity of a song than its lyrics. Thus, our inference would be that artists        should focus more on these statistical features than on lyrics in order to compose more chartbuster songs.
+  4. Since the mean squared error of statistical data(0.026) is lesser than that of lyrics data(0.045), hence we conclude that the statistical features          like liveness, tempo, danceability, etc are better predictors of the popularity of a song than its lyrics. Thus, our inference would be that artists        should focus more on these statistical features than on lyrics in order to compose more chartbuster songs.
  
  ## Future Improvements
 Our current model has some limitations which can be improved in the future. Some of them are-:
