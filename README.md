@@ -68,10 +68,12 @@ Models used for predicting popularity using lyrics :
 The file structure of repository is as follows: 
   1. Root Directory: 
     Contains all the notebooks
+    
   2. Final Datasets: 
      1. tracks.csv - The non-edited dataset downloaded from Kaggle. Contains the statistical data such as danceability, explicit, etc. 
      2. lyrics.csv - The non-edited dataset downloaded from Kaggle. Contains the lyrics to all the songs used. 
-     3. dataCleaned.csv - The merged and cleaned file. This file is created in 'Data Extraction and Cleaning.ipynb'. 
+     3. dataCleaned.csv - The merged and cleaned file. This file is created in 'Data Extraction and Cleaning.ipynb'.
+      
   3. Train Test Data: 
     This file contains the train and test data for each model. We split the data in a seperate notebook called 'Train Test Split.ipynb'. This was to ensure that the same data is fed to each model for better accuracy. 
     It has the files: 
