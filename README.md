@@ -13,7 +13,7 @@ To achieve this goal, we followed the following steps-:
 ## Presentation
 Presentation Video-: [Click Here](https://youtu.be/3MMJGD-TlSA)
 
-Presentation Slides-: [Click Here](https://github.com/MoBanerjee/SC1015_DSAI_MiniProject_Team6/blob/main/SC1015%20Mini_Project%20Slides.pdf)
+Presentation Slides-: [Click Here](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/SLIDES%20FOR%20DSAI.pdf)
 
 For detailed walkthrough, please view the source code in order from:
 
