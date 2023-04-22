@@ -20,11 +20,11 @@ For detailed walkthrough, please view the source code in order from:
   1. [Data Extraction and Cleaning](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Data%20Extraction%20%26%20Cleaning.ipynb)
   2. [Data Visualisation and EDA](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Exploratory%20Data%20Analysis%20.ipynb)
   3. [Train-Test Split](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Train-Test-Split.ipynb)
-  4. [Sequential Neural Network](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Sequential%20Neural%20Networks.ipynb)
+  4. [Linear Regression (For Statistical Data)](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Linear%20Regression%20for%20Statistical%20Data.ipynb)
   5. [Random Forest](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Random%20forest%20for%20Statistical%20Data.ipynb)
-  6. [Linear Regression (For Statistical Data)](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Linear%20Regression%20for%20Statistical%20Data.ipynb)
-  7. [LSTM Network](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/NLP-LSTM.ipynb)
-  8. [Linear Regression (For Lyrics Data)](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/NLP-baseline-Linear%20Regression.ipynb)
+  6. [Sequential Neural Network](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Sequential%20Neural%20Networks.ipynb)
+  7. [Linear Regression (For Lyrics Data)](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/NLP-baseline-Linear%20Regression.ipynb)
+  8. [LSTM Network](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/NLP-LSTM.ipynb)
   
 ## Requirements
 There were a lot of open-source python libraries which were used for this project. They can all be installed on the virtual environment using: 
