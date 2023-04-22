@@ -1,4 +1,5 @@
-# <u>What influences Song Popularity more - Lyrics or Other Statistical Features like tempo, loudness, etc?</u>
+# <u>Hit Maker- The data driven guide to craft songs</u>
+### Team 6, Lab group A139
 ## About
 While composing songs, artists need to focus on several parameters like- lyrics, tempo, duration,danceability, etc. to name a few. Often, the artists are confused about which feature of the song they should focus more on. Additionally, despite the hardwork, many songs fail to gain sufficient popularity among the audience.Keeping this problem in mind, the goal of our SC1015 Mini-project is to find out which parameters of a song influence its popularity more- its lyrics or its other statistical features like tempo, danceability, etc. Analysing this influence using data science can assist artists in focusing more on relevant features and thus, in releasing more chartbuster songs.
 
@@ -16,14 +17,20 @@ Presentation Slides-: [Click Here](https://github.com/MoBanerjee/SC1015_DSAI_Min
 
 For detailed walkthrough, please view the source code in order from:
 
-  1. [Data Extraction and Cleaning](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Data%20Extraction%20%26%20Cleaning.ipynb)
+  1. [Data Extraction and Cleaning](https://github.com/MoBanerjee/SC1015_DSAI_MiniProject_Team6/blob/main/Data%20Extraction%20%26%20Cleaning-4.ipynb)
   2. [Data Visualisation and EDA](https://github.com/MoBanerjee/SC1015_DSAI_MiniProject_Team6/blob/main/Exploratory%20Data%20Analysis-3-4%20(1).ipynb)
-  3. [Train-Test Split](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Train-Test-Split.ipynb)
-  4. [Sequential Neural Network](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Sequential%20Neural%20Networks.ipynb)
-  5. [Random Forest](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Random%20forest%20for%20Statistical%20Data.ipynb)
-  6. [Linear Regression (For Statistical Data)](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/Linear%20Regression%20for%20Statistical%20Data.ipynb)
-  7. [LSTM Network](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/NLP-LSTM.ipynb)
-  8. [Linear Regression (For Lyrics Data)](https://github.com/MoBanerjee/SC1015_DSAI-MiniProject_Team6/blob/main/NLP-baseline-Linear%20Regression.ipynb)
+  3. [Train-Test Split](https://github.com/MoBanerjee/SC1015_DSAI_MiniProject_Team6/blob/main/Train-Test-Split-2%20(1).ipynb)
+  4. [Sequential Neural Network](https://github.com/MoBanerjee/SC1015_DSAI_MiniProject_Team6/blob/main/Neural%20Networks.ipynb)
+  5. [Random Forest](https://github.com/MoBanerjee/SC1015_DSAI_MiniProject_Team6/blob/main/randomForest.ipynb)
+  6. [Linear Regression (For Statistical Data)](https://github.com/MoBanerjee/SC1015_DSAI_MiniProject_Team6/blob/main/Regression-2%20(1).ipynb)
+  7. [LSTM Network](https://github.com/MoBanerjee/SC1015_DSAI_MiniProject_Team6/blob/main/NLP-LSTM.ipynb)
+  8. [Linear Regression (For Lyrics Data)](https://github.com/MoBanerjee/SC1015_DSAI_MiniProject_Team6/blob/main/NLP-baseline.ipynb)
+  
+## Requirements
+There were a lot of open-source python libraries which were used for this project. They can all be installed on the virtual environment using: 
+```
+pip install -r requirements.txt
+```
 
 ## Problem Definition
 What predicts Song Popularity better - Lyrics or Other Statistical Features like tempo, loudness, etc?
@@ -31,7 +38,7 @@ What predicts Song Popularity better - Lyrics or Other Statistical Features like
 Features Analysed-:
  1. Numerical: tempo, danceability, loudness etc.
  2. Categorical: explicit (true/false)
- 3. Lyrics: language
+ 3. Natural Language - lyrics
 
 ## Datasets Used
 We extracted these two datasets from Kaggle.
@@ -56,6 +63,20 @@ Models used for predicting popularity using features like tempo, key, loudness, 
 Models used for predicting popularity using lyrics :
   1. Long Short-Term Memory (LSTM) Network
   2. Linear Regression
+  
+## File structure: 
+The file structure of repository is as follows: 
+  1. Root Directory: 
+    Contains all the notebooks
+  2. Final Datasets: 
+    a. tracks.csv - The non-edited dataset downloaded from Kaggle. Contains the statistical data such as danceability, explicit, etc. 
+    b. lyrics.csv - The non-edited dataset downloaded from Kaggle. Contains the lyrics to all the songs used. 
+    c. dataCleaned.csv - The merged and cleaned file. This file is created in 'Data Extraction and Cleaning.ipynb'. 
+  3. Train Test Data: 
+    This file contains the train and test data for each model. We split the data in a seperate notebook called 'Train Test Split.ipynb'. This was to ensure that the same data is fed to each model for better accuracy. 
+    It has the files: 
+      a. train.csv - Training data
+      b. test.csv - Test data
 
 ## Conclusion
   1. For statistical data, we obtained the best results with neural networks.It yielded a Mean Squared Error of only 0.026 which is lesser than that given      by both the baseline models(Random Forest and Linear Regression).
