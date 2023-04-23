@@ -1,5 +1,11 @@
 # <u>Hit Maker- The data driven guide to craft songs</u>
 ### Team 6, Lab group A139
+
+### Contributors
+  1. Ananya Agarwal - Data extraction, Data cleaning and EDA 
+  2. Mohor Banerjee(U2222858E) - Models for Statistical Data
+  3. Shrivardhan Goenka(U2223981G) - Models for Lyrics Data
+
 ## About
 While composing songs, artists need to focus on several parameters like- lyrics, tempo, duration,danceability, etc. to name a few. Often, the artists are confused about which feature of the song they should focus more on. Additionally, despite the hardwork, many songs fail to gain sufficient popularity among the audience.Keeping this problem in mind, the goal of our SC1015 Mini-project is to find out which parameters of a song influence its popularity more- its lyrics or its other statistical features like tempo, danceability, etc. Analysing this influence using data science can assist artists in focusing more on relevant features and thus, in releasing more chartbuster songs.
 
@@ -252,10 +258,6 @@ Our current model has some limitations which can be improved in the future. Some
 4. https://www.activestate.com/resources/quick-reads/how-to-create-a-neural-network-in-python-with-and-without-keras/
 5. https://towardsdatascience.com/random-forest-in-python-24d0893d51c0
 
-## Contributors
-  1. Ananya Agarwal - Data extraction, Data cleaning and EDA 
-  2. Mohor Banerjee(U2222858E) - Models for Statistical Data
-  3. Shrivardhan Goenka(U2223981G) - Models for Lyrics Data
 
 
 
