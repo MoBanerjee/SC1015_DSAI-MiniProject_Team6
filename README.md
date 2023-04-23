@@ -254,8 +254,8 @@ Our current model has some limitations which can be improved in the future. Some
 
 ## Contributors
   1. Ananya Agarwal - Data extraction, Data cleaning and EDA 
-  2. Mohor Banerjee - Models for Statistical Data
-  3. Shrivardhan Goenka - Models for Lyrics Data
+  2. Mohor Banerjee(U2222858E) - Models for Statistical Data
+  3. Shrivardhan Goenka(U2223981G) - Models for Lyrics Data
 
 
 
